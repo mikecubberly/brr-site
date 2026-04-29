@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bottle Rocket Racing | Motorsports Business Development & Sponsorship Pipeline for Race Teams</title>
+  <title>Sponsorship Pipeline for Race Teams | Bottle Rocket Racing</title>
   <meta name="description" content="Bottle Rocket Racing is a motorsports business development and sponsorship firm partnered with elite race teams, including NASCAR teams. We build the commercial infrastructure that converts fan enthusiasm into lasting sponsorship revenue. Services include CRM setup, prospect identification, sponsorship proposal development, and active pipeline generation. Founded as the motorsports arm of Bottle Rocket Growth.">
   <meta name="keywords" content="motorsports business development, NASCAR sponsorship, race team sponsorship, sponsorship pipeline, motorsport revenue, sponsorship proposal, racing business development, NASCAR Xfinity sponsorship, race team CRM, Bottle Rocket Racing, motorsports consulting, sponsorship sales">
   <meta name="author" content="Mike Cubberly">
@@ -831,6 +831,27 @@
     }
     .footer-brand:hover { opacity: 1; }
 
+    /* ── BYLINE / META ── */
+    .byline-row {
+      display: flex; flex-wrap: wrap; gap: 18px; align-items: center; justify-content: center;
+      padding: 24px 60px 0; max-width: 1100px; margin: 0 auto;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+      color: rgba(245,243,239,0.4);
+    }
+    .byline-row a { color: var(--gold); text-decoration: none; transition: color 0.25s; }
+    .byline-row a:hover { color: var(--accent); }
+    .byline-dot { color: rgba(245,243,239,0.18); }
+
+    /* ── FOOTER SOCIAL ── */
+    .footer-social { display: flex; gap: 18px; align-items: center; }
+    .footer-social a {
+      width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;
+      border: 1px solid rgba(201,168,76,0.25); color: rgba(245,243,239,0.55); transition: all 0.25s;
+    }
+    .footer-social a:hover { border-color: var(--gold); color: var(--gold); }
+    .footer-social svg { width: 14px; height: 14px; }
+
     /* ── REVEAL ── */
     .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.85s ease, transform 0.85s ease; }
     .reveal.visible { opacity: 1; transform: none; }
@@ -872,9 +893,10 @@
   <nav id="nav">
     <a href="#" class="nav-logo">Bottle Rocket <span>Racing</span></a>
     <ul class="nav-links">
-      <li><a href="#about">About</a></li>
+      <li><a href="/about.html">About</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#approach">Approach</a></li>
+      <li><a href="/press.html">Press</a></li>
     </ul>
     <a href="/cdn-cgi/l/email-protection#a7caceccc2e7c5c8d3d3cbc2d5c8c4ccc2d3c0d5c8d0d3cf89c4c8ca" class="nav-cta">Let's Talk</a>
   </nav>
@@ -1122,17 +1144,36 @@
 
   <!-- ══ FOOTER ══ -->
   <footer>
+    <div class="byline-row">
+      <span>Founded by <a href="https://mikecubberly.com" target="_blank" rel="author">Mike Cubberly</a></span>
+      <span class="byline-dot">•</span>
+      <span>Published June 2024</span>
+      <span class="byline-dot">•</span>
+      <span>Last updated <time datetime="2026-04-29">April 29, 2026</time></span>
+    </div>
     <div class="footer-top">
       <div class="footer-logo">Bottle Rocket <span>Racing</span></div>
       <ul class="footer-links">
-        <li><a href="#about">About</a></li>
+        <li><a href="/about.html">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#approach">Approach</a></li>
-        <li><a href="/cdn-cgi/l/email-protection#abc6c2c0ceebc9c4dfdfc7ced9c4c8c0cedfccd9c4dcdfc385c8c4c6">Contact</a></li>
+        <li><a href="/press.html">Press</a></li>
+        <li><a href="/contact.html">Contact</a></li>
       </ul>
+      <div class="footer-social" aria-label="Bottle Rocket Racing on social platforms">
+        <a href="https://www.linkedin.com/in/mikecubberly" target="_blank" rel="me noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://github.com/mikecubberly" target="_blank" rel="me noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-2.07C5.73 20.81 5.07 18.4 5.07 18.4c-.49-1.25-1.2-1.59-1.2-1.59-.98-.67.07-.66.07-.66 1.08.08 1.65 1.11 1.65 1.11.96 1.65 2.53 1.18 3.15.9.1-.7.38-1.18.69-1.45-2.4-.27-4.92-1.2-4.92-5.34 0-1.18.42-2.15 1.11-2.91-.11-.27-.48-1.37.1-2.86 0 0 .91-.29 2.97 1.11.86-.24 1.78-.36 2.7-.36s1.84.12 2.7.36c2.06-1.4 2.97-1.11 2.97-1.11.59 1.49.22 2.59.11 2.86.69.76 1.11 1.73 1.11 2.91 0 4.15-2.53 5.07-4.94 5.34.39.34.74 1 .74 2.02v2.99c0 .3.2.66.79.55C20.21 21.39 23.5 17.07 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
+        </a>
+        <a href="https://bottlerocketgrowth.com" target="_blank" rel="me noopener" aria-label="Bottle Rocket Growth">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </a>
+      </div>
     </div>
     <div class="footer-bottom">
-      <div class="footer-copy">© 2026 Bottle Rocket Growth. All rights reserved.</div>
+      <div class="footer-copy">© 2026 Bottle Rocket Growth. All rights reserved. Bottle Rocket Racing is a Bottle Rocket Growth brand. Based in Chicago, Illinois.</div>
       <a href="https://bottlerocketgrowth.com" target="_blank" class="footer-brand">
         A Bottle Rocket Growth Brand
       </a>

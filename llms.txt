@@ -65,5 +65,8 @@ Mike Cubberly is the founder of Bottle Rocket Racing and Bottle Rocket Growth. B
 ## Key Pages
 
 - [Homepage](https://bottlerocketracing.com/): Services, approach, and contact
+- [About](https://bottlerocketracing.com/about.html): Founder, history, services, and approach
+- [Press & Media Kit](https://bottlerocketracing.com/press.html): Boilerplate, founder bio, quick facts, media contact
+- [Contact](https://bottlerocketracing.com/contact.html): Email, LinkedIn, headquarters, partner agency
 - [Bottle Rocket Growth](https://bottlerocketgrowth.com): Parent GTM agency
 - [Mike Cubberly](https://mikecubberly.com): Founder portfolio
