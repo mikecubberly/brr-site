@@ -71,12 +71,32 @@
 }
 </script>
 
+<script>
+  (function(){
+    try {
+      var stored = localStorage.getItem('theme');
+      document.documentElement.setAttribute('data-theme', stored || 'dark');
+    } catch(e) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  })();
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  :root { --black: #0a0a0a; --gold: #C9A84C; --white: #f5f3ef; --muted: rgba(245,243,239,0.5); --border: rgba(255,255,255,0.07); --accent: #E8D5A3; }
+  :root { --black: #0a0a0a; --gold: #C9A84C; --white: #f5f3ef; --muted: rgba(245,243,239,0.5); --border: rgba(255,255,255,0.07); --accent: #E8D5A3; --logo-invert: 1; }
+  [data-theme="light"] { --black: #f5efe2; --gold: #b8964a; --white: #1f1a14; --muted: rgba(31,26,20,0.55); --border: rgba(31,26,20,0.12); --accent: #8a6f30; --logo-invert: 0; }
+  body, nav, footer { transition: background 0.4s ease, color 0.4s ease, border-color 0.4s ease; }
+  .nav-right { display: inline-flex; align-items: center; gap: 18px; }
+  .theme-toggle { background: transparent; border: 1px solid var(--border); border-radius: 50%; width: 36px; height: 36px; display: inline-flex; align-items: center; justify-content: center; color: var(--white); cursor: pointer; transition: border-color 0.25s ease, color 0.25s ease; padding: 0; }
+  .theme-toggle:hover { border-color: var(--gold); color: var(--gold); }
+  .theme-toggle svg { width: 14px; height: 14px; }
+  .theme-sun { display: none; } .theme-moon { display: inline-block; }
+  [data-theme="light"] .theme-sun { display: inline-block; } [data-theme="light"] .theme-moon { display: none; }
+  .brg-logo-inline { display: inline-block; width: 22px; height: 22px; vertical-align: -6px; margin-right: 6px; filter: invert(var(--logo-invert)); }
   body { background: var(--black); color: var(--white); font-family: 'Barlow', sans-serif; font-weight: 300; line-height: 1.7; }
   a { color: var(--gold); text-decoration: none; }
   a:hover { color: var(--accent); }
@@ -110,12 +130,18 @@
 <body>
 <nav>
   <a href="/" class="nav-logo">Bottle Rocket <span>Racing</span></a>
-  <ul class="nav-links">
-    <li><a href="/">Home</a></li>
-    <li><a href="/about.html">About</a></li>
-    <li><a href="/press.html">Press</a></li>
-    <li><a href="/contact.html">Contact</a></li>
-  </ul>
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/press.html">Press</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" data-theme-toggle aria-label="Toggle light and dark theme">
+      <svg class="theme-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      <svg class="theme-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </div>
 </nav>
 
 <main>
@@ -154,11 +180,24 @@
 </main>
 
 <footer>
-  <div class="footer-copy">© 2026 Bottle Rocket Growth. All rights reserved. Bottle Rocket Racing is a Bottle Rocket Growth brand. Based in Chicago, Illinois.</div>
+  <div class="footer-copy">© 2026 <img class="brg-logo-inline" src="/brg-logo.png" alt="">Bottle Rocket Growth. All rights reserved. Bottle Rocket Racing is a Bottle Rocket Growth brand. Based in Chicago, Illinois.</div>
   <div class="footer-social" aria-label="Bottle Rocket Racing on social platforms">
     <a href="https://www.linkedin.com/in/mikecubberly" target="_blank" rel="me noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
-    <a href="https://github.com/mikecubberly" target="_blank" rel="me noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-2.07C5.73 20.81 5.07 18.4 5.07 18.4c-.49-1.25-1.2-1.59-1.2-1.59-.98-.67.07-.66.07-.66 1.08.08 1.65 1.11 1.65 1.11.96 1.65 2.53 1.18 3.15.9.1-.7.38-1.18.69-1.45-2.4-.27-4.92-1.2-4.92-5.34 0-1.18.42-2.15 1.11-2.91-.11-.27-.48-1.37.1-2.86 0 0 .91-.29 2.97 1.11.86-.24 1.78-.36 2.7-.36s1.84.12 2.7.36c2.06-1.4 2.97-1.11 2.97-1.11.59 1.49.22 2.59.11 2.86.69.76 1.11 1.73 1.11 2.91 0 4.15-2.53 5.07-4.94 5.34.39.34.74 1 .74 2.02v2.99c0 .3.2.66.79.55C20.21 21.39 23.5 17.07 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg></a>
   </div>
 </footer>
+
+<script>
+  (function(){
+    var btn = document.querySelector('[data-theme-toggle]');
+    if (!btn) return;
+    btn.addEventListener('click', function(){
+      var root = document.documentElement;
+      var next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch(e) {}
+    });
+  })();
+</script>
+</body>
 </body>
 </html>
