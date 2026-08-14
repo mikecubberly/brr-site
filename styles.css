@@ -1373,6 +1373,7 @@ body.dialog-open {
 
 .pipeline-visual {
   position: relative;
+  isolation: isolate;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1384,6 +1385,12 @@ body.dialog-open {
     linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
     #070809;
   background-size: 42px 42px;
+  animation: pipelineGridDrift 18s linear infinite;
+}
+
+.pipeline-visual:focus-visible {
+  outline: 1px solid rgba(255, 103, 25, 0.86);
+  outline-offset: -4px;
 }
 
 .pipeline-visual::before {
@@ -1394,26 +1401,57 @@ body.dialog-open {
   border: 1px solid rgba(255, 90, 10, 0.22);
   border-radius: 50%;
   box-shadow: 0 0 0 72px rgba(255, 90, 10, 0.025), 0 0 0 144px rgba(255, 90, 10, 0.018);
+  animation: pipelineRingPulse 5.2s ease-in-out infinite;
+  will-change: transform, opacity, box-shadow;
+}
+
+.pipeline-visual::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  background: conic-gradient(from 215deg, transparent 0 84%, rgba(255, 85, 0, 0.12) 92%, transparent 100%);
+  opacity: 0.5;
+  animation: pipelineSweep 12s linear infinite;
+  pointer-events: none;
 }
 
 .metric-lockup {
   position: relative;
   z-index: 2;
   text-align: center;
+  transition: transform 360ms cubic-bezier(0.22, 0.8, 0.3, 1);
+  will-change: transform;
+}
+
+.pipeline-visual:hover .metric-lockup,
+.pipeline-visual:focus-visible .metric-lockup {
+  transform: translateY(-5px) scale(1.018);
 }
 
 .metric-big {
   display: block;
-  color: var(--white);
+  background: linear-gradient(105deg, #f4f4f2 18%, #f4f4f2 38%, #ffffff 48%, #c9cbd0 54%, #f4f4f2 64%, #f4f4f2 82%);
+  background-position: 120% 50%;
+  background-size: 240% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   font-family: var(--display);
   font-size: clamp(90px, 12vw, 160px);
   font-weight: 700;
   letter-spacing: -0.07em;
   line-height: 0.8;
+  -webkit-text-fill-color: transparent;
+  animation: metricShimmer 5.8s ease-in-out infinite;
 }
 
 .metric-big span {
   color: var(--orange);
+  -webkit-text-fill-color: var(--orange);
+  animation: metricDollarGlow 3.8s ease-in-out infinite;
 }
 
 .metric-caption {
@@ -1425,6 +1463,38 @@ body.dialog-open {
   font-weight: 600;
   letter-spacing: 0.17em;
   text-transform: uppercase;
+}
+
+@keyframes pipelineGridDrift {
+  from { background-position: 0 0, 0 0, 0 0; }
+  to { background-position: 42px 42px, 42px 42px, 0 0; }
+}
+
+@keyframes pipelineRingPulse {
+  0%, 100% {
+    opacity: 0.72;
+    transform: scale(0.985);
+    box-shadow: 0 0 0 72px rgba(255, 90, 10, 0.02), 0 0 0 144px rgba(255, 90, 10, 0.014);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.025);
+    box-shadow: 0 0 0 78px rgba(255, 90, 10, 0.034), 0 0 0 154px rgba(255, 90, 10, 0.024);
+  }
+}
+
+@keyframes pipelineSweep {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes metricShimmer {
+  0%, 22% { background-position: 120% 50%; }
+  68%, 100% { background-position: -120% 50%; }
+}
+
+@keyframes metricDollarGlow {
+  0%, 100% { filter: drop-shadow(0 0 0 rgba(255, 85, 0, 0)); }
+  50% { filter: drop-shadow(0 0 12px rgba(255, 85, 0, 0.34)); }
 }
 
 .pipeline-copy .section-title {
