@@ -12,9 +12,9 @@
   --line-hot: rgba(255, 90, 10, 0.42);
   --display: "Barlow Condensed", Arial, sans-serif;
   --body: "Barlow", Arial, sans-serif;
-  --header-gutter: 3.5vw;
+  --header-gutter: 4.5vw;
   --section-gutter: 4.5vw;
-  --hero-gutter: 5.5vw;
+  --hero-gutter: 4.5vw;
 }
 
 * {
@@ -122,6 +122,7 @@ select {
   display: block;
   width: min(270px, 30vw);
   height: 48px;
+  margin-left: -8px;
   min-width: 0;
   overflow: hidden;
 }
@@ -1289,20 +1290,21 @@ p {
 @media (max-width: 760px) {
   .shell {
     width: auto;
-    margin-right: 16px;
-    margin-left: 16px;
+    margin-right: 24px;
+    margin-left: 24px;
   }
 
   .header-inner {
     width: 100%;
     margin: 0;
-    padding-right: 18px;
-    padding-left: 18px;
+    padding-right: 24px;
+    padding-left: 24px;
   }
 
   .brand-lockup {
     width: 210px;
     height: 42px;
+    margin-left: -6px;
     min-width: 0;
   }
 
