@@ -1835,14 +1835,19 @@ body.dialog-open {
   padding-bottom: 48px;
 }
 
-.footer-name {
-  color: var(--white);
-  font-family: var(--display);
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  line-height: 1;
-  text-transform: uppercase;
+.footer-logo {
+  display: block;
+  width: clamp(180px, 24vw, 250px);
+  height: 52px;
+  margin-left: -8px;
+  overflow: hidden;
+}
+
+.footer-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: translateY(-19px);
 }
 
 .footer-links {
