@@ -2061,6 +2061,46 @@ body.dialog-open {
   font-size: 12px;
 }
 
+.footer-bottom a {
+  color: var(--muted-bright);
+  border-bottom: 1px solid rgba(255, 85, 0, 0.72);
+}
+
+.footer-bottom a:hover {
+  color: var(--orange);
+}
+
+.footer-location {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.chicago-flag {
+  display: inline-grid;
+  place-items: center;
+  width: 32px;
+  height: 19px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: linear-gradient(to bottom, #f6f6f4 0 16%, #6eb9dc 16% 32%, #f6f6f4 32% 68%, #6eb9dc 68% 84%, #f6f6f4 84% 100%);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  color: #d8232a;
+  font-family: Arial, sans-serif;
+  font-size: 5px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.chicago-flag > span {
+  display: block;
+  white-space: nowrap;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(24px);
