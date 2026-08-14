@@ -717,47 +717,28 @@ p {
 
 .sender-profile-banner {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100px;
-  padding: 0 28px;
+  height: 178px;
   overflow: hidden;
-  background:
-    linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
-    linear-gradient(120deg, #130a05, #5d1d05 62%, #ff5500);
-  background-size: 20px 20px, 20px 20px, auto;
-  color: #fff;
-}
-
-.sender-profile-banner b {
-  font-family: var(--display);
-  font-size: 29px;
-  line-height: 0.9;
-  letter-spacing: 0.08em;
-}
-
-.sender-profile-banner > span {
-  margin-top: 5px;
-  font-family: var(--display);
-  font-size: 8px;
-  font-weight: 700;
-  letter-spacing: 0.25em;
+  background-image:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.2)),
+    url("/apex-47-linkedin-banner.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .sender-profile-body {
   position: relative;
   display: grid;
-  grid-template-columns: 76px minmax(0, 1fr);
-  gap: 12px;
-  padding: 0 18px 16px;
+  grid-template-columns: 84px minmax(0, 1fr);
+  gap: 14px;
+  padding: 0 20px 20px;
 }
 
 .sender-avatar {
-  width: 72px;
-  height: 72px;
-  margin-top: -24px;
+  width: 80px;
+  height: 80px;
+  margin-top: -30px;
   border: 4px solid #f4f6f8;
   border-radius: 50%;
   background-image: url("https://bottlerocketgrowth.com/assets/fictional-sender-headshots.jpg");
@@ -768,7 +749,7 @@ p {
 }
 
 .sender-identity {
-  padding-top: 12px;
+  padding-top: 14px;
 }
 
 .sender-identity strong,
@@ -778,55 +759,116 @@ p {
 }
 
 .sender-identity strong {
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .sender-identity span {
   margin-top: 3px;
   color: #4d5965;
-  font-size: 10.5px;
+  font-size: 11px;
 }
 
 .sender-identity small {
   margin-top: 4px;
   color: #7c8792;
-  font-size: 8.5px;
+  font-size: 9px;
+}
+
+.sender-name-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  padding-right: 4px;
+}
+
+.linkedin-premium-badge {
+  display: inline-flex !important;
+  gap: 5px;
+  align-items: center;
+  flex: none;
+  margin: 0 !important;
+  color: #8a6116 !important;
+  font-size: 8px !important;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.linkedin-premium-badge i {
+  display: grid;
+  place-items: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  background: linear-gradient(145deg, #d7a43a, #8f6315);
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 700;
 }
 
 .sender-headline {
   grid-column: 1 / -1;
-  margin-top: 4px;
-  padding: 10px 12px;
+  margin-top: 8px;
+  padding: 12px 13px;
   border: 1px solid #dde3e9;
   border-radius: 6px;
   background: #fff;
   color: #35414c;
-  font-size: 10px;
-  line-height: 1.45;
+  font-size: 10.5px;
+  line-height: 1.5;
 }
 
 .sender-profile-bottom {
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.82fr 1.18fr;
   gap: 8px;
 }
 
 .sender-profile-bottom span {
-  padding: 9px;
+  min-height: 104px;
+  padding: 12px;
   border: 1px solid #dde3e9;
   border-radius: 6px;
   background: #fff;
   color: #69747f;
-  font-size: 8.5px;
-  line-height: 1.4;
+  font-size: 9px;
+  line-height: 1.5;
 }
 
 .sender-profile-bottom b {
   display: block;
-  margin-bottom: 3px;
+  margin-bottom: 6px;
   color: #17202a;
+  font-size: 10px;
+}
+
+.sender-experience strong,
+.sender-experience em,
+.sender-experience small {
+  display: block;
+}
+
+.sender-experience strong {
+  color: #17202a;
+  font-size: 10px;
+}
+
+.sender-experience em {
+  margin-top: 2px;
+  color: #4d5965;
   font-size: 9px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.sender-experience small {
+  margin-top: 6px;
+  color: #69747f;
+  font-size: 8.5px;
+  line-height: 1.45;
 }
 
 .profile-callout {
@@ -864,7 +906,7 @@ p {
 }
 
 .callout-role {
-  top: 7px;
+  top: 96px;
   right: 10px;
   animation-delay: 0.8s;
 }
@@ -2103,6 +2145,11 @@ body.dialog-open {
 
   .sender-profile-preview {
     padding: 12px;
+  }
+
+  .sender-profile-banner {
+    height: 150px;
+    background-position: 56% center;
   }
 
   .sender-profile-body {
