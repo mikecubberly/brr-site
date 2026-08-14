@@ -481,6 +481,11 @@ p {
   line-height: 1.65;
 }
 
+.section-intro .accent-text {
+  color: var(--orange);
+  font-weight: 600;
+}
+
 .offer-split {
   display: grid;
   grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
