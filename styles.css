@@ -580,6 +580,7 @@ p {
   background: #020303;
   color: inherit;
   text-align: left;
+  text-decoration: none;
   cursor: pointer;
 }
 
