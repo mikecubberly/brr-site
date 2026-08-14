@@ -811,11 +811,6 @@ p {
     #000;
 }
 
-.cta-mark {
-  width: min(340px, 60vw);
-  margin: 0 auto 38px;
-}
-
 .cta-section h2 {
   max-width: 900px;
   margin: 0 auto 22px;
@@ -1135,15 +1130,14 @@ p {
   padding-bottom: 48px;
 }
 
-.footer-brand {
-  width: min(340px, 72vw);
-}
-
-.footer-brand p {
-  max-width: 390px;
-  margin: 14px 0 0;
-  color: var(--muted);
-  font-size: 14px;
+.footer-name {
+  color: var(--white);
+  font-family: var(--display);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 1;
+  text-transform: uppercase;
 }
 
 .footer-links {
