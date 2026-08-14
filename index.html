@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,400&amp;family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;1,600&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=services-4">
+  <link rel="stylesheet" href="/styles.css?v=services-5">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -61,6 +61,8 @@
       "itemListElement": [
         {
           "@type": "Offer",
+          "price": "2500",
+          "priceCurrency": "USD",
           "itemOffered": {
             "@type": "Service",
             "name": "Sponsorship Sales Foundation",
@@ -138,15 +140,24 @@
             <p class="eyebrow">What we build</p>
             <h2 class="section-title">Commercial infrastructure built for <span>race teams.</span></h2>
           </div>
-          <p class="section-intro">Start with the sponsor sales foundation. Add Pipeline Generation when you want a LinkedIn motion built or run.</p>
+          <p class="section-intro">Two focused ways to grow sponsorship revenue. Foundation gives your team the assets to sell clearly. Pipeline Generation creates a sustainable, repeatable, and consistent flow of sponsor conversations.</p>
         </div>
         <div class="offer-split">
           <article class="offer-panel foundation-panel reveal">
             <header class="offer-panel-head">
-              <p class="card-kicker"><span>01</span> Foundation</p>
+              <p class="card-kicker"><span>Option 01</span> Foundation</p>
               <h3>Build the sponsor sales system</h3>
               <p>Everything the team needs to look credible, get discovered, and manage opportunities.</p>
+              <div class="option-price"><strong>$2,500</strong><span>One-time build</span></div>
             </header>
+            <button class="microsite-preview" type="button" data-open-microsite aria-haspopup="dialog" aria-controls="microsite-example">
+              <span class="preview-browser-bar"><i></i><i></i><i></i><b>apex47racing.com/partners</b></span>
+              <span class="preview-car-wrap">
+                <img src="/race-car-47.png" alt="Example race-team sponsor microsite featuring a race car">
+                <span class="preview-car-copy"><small>APEX 47 RACING</small><strong>Built to<br>be seen.</strong></span>
+                <span class="preview-link-label">View example microsite <b>&#8599;</b></span>
+              </span>
+            </button>
             <div class="foundation-list" aria-label="Sponsorship sales foundation deliverables">
               <div class="foundation-row">
                 <strong>1</strong>
@@ -173,10 +184,27 @@
 
           <article class="offer-panel pipeline-panel reveal">
             <header class="offer-panel-head">
-              <p class="card-kicker"><span>02</span> Pipeline generation</p>
-              <h3>Choose how much we run</h3>
-              <p>Three LinkedIn outreach tiers. One clear difference: who does the work.</p>
+              <p class="card-kicker"><span>Option 02</span> Pipeline generation</p>
+              <h3>Build repeatable sponsor pipeline</h3>
+              <p>A consistent outbound engine that keeps the right brands entering the conversation.</p>
+              <div class="option-price"><strong>From $500</strong><span>Per sender / month</span></div>
             </header>
+            <div class="sender-profile-preview" aria-label="Animated example of a fictional LinkedIn sender profile">
+              <div class="sender-preview-bar"><span>Example LinkedIn sender</span><small>Fictional profile</small></div>
+              <div class="sender-profile-card">
+                <div class="sender-profile-banner">
+                  <b>APEX 47</b><span>RACING PARTNERSHIPS</span>
+                  <i class="profile-callout callout-brand">Team branding</i>
+                </div>
+                <div class="sender-profile-body">
+                  <div class="sender-avatar" role="img" aria-label="Fictional portrait of Maya Thompson"></div>
+                  <div class="sender-identity"><strong>Maya Thompson</strong><span>Director of Partnerships at Apex 47 Racing</span><small>Chicago, Illinois &bull; 500+ connections</small></div>
+                  <i class="profile-callout callout-role">Sponsor-ready role</i>
+                  <div class="sender-headline">Building brand partnerships that connect racing, content, and customer growth.</div>
+                  <div class="sender-profile-bottom"><span><b>About</b> Partnership strategy, activation, and measurable sponsor value.</span><span><b>Experience</b> Apex 47 Racing &bull; Director of Partnerships</span></div>
+                </div>
+              </div>
+            </div>
             <div class="tier-list" aria-label="Sponsorship pipeline generation tiers">
               <section class="tier-row">
                 <div class="tier-name"><span>Done For You</span><h4>We run everything</h4></div>
@@ -205,6 +233,21 @@
         </div>
       </div>
     </section>
+
+    <dialog class="microsite-dialog" id="microsite-example" aria-labelledby="microsite-example-title">
+      <div class="microsite-dialog-shell">
+        <button class="microsite-close" type="button" data-close-microsite aria-label="Close example microsite">Close</button>
+        <div class="example-site">
+          <div class="example-site-nav"><b>A47</b><span>APEX 47 RACING</span><small>2027 PARTNER OPENING</small></div>
+          <div class="example-site-hero">
+            <img src="/race-car-47.png" alt="Race car displayed inside the Apex 47 example sponsor microsite">
+            <div><p id="microsite-example-title">APEX 47 RACING</p><h3>Built to<br>be seen.</h3><span>A sponsor-facing home for the team, audience, season, and commercial story.</span></div>
+          </div>
+          <div class="example-site-metrics"><span><b>38</b> Race weekends</span><span><b>19</b> Key markets</span><span><b>52</b> Content drops</span><span><b>12</b> VIP experiences</span></div>
+          <div class="example-site-bottom"><p><b>One clear sponsor destination.</b> Built for mobile, structured for search and AI discovery, and designed to move interested brands into a conversation.</p><a href="/contact.html">Build my microsite</a></div>
+        </div>
+      </div>
+    </dialog>
 
     <section class="pipeline-section" aria-labelledby="pipeline-title">
       <div class="shell pipeline-grid">
@@ -299,6 +342,6 @@
       </div>
     </div>
   </footer>
-  <script src="/site.js" defer></script>
+  <script src="/site.js?v=services-5" defer></script>
 </body>
 </html>

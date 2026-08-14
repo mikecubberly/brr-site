@@ -33,6 +33,34 @@ if (menuButton && navWrap) {
   });
 }
 
+const micrositeDialog = document.querySelector("#microsite-example");
+const micrositeOpeners = document.querySelectorAll("[data-open-microsite]");
+const micrositeCloser = document.querySelector("[data-close-microsite]");
+
+if (micrositeDialog && micrositeOpeners.length) {
+  const closeMicrosite = () => {
+    micrositeDialog.close();
+    document.body.classList.remove("dialog-open");
+  };
+
+  micrositeOpeners.forEach((opener) => {
+    opener.addEventListener("click", () => {
+      micrositeDialog.showModal();
+      document.body.classList.add("dialog-open");
+    });
+  });
+
+  if (micrositeCloser) micrositeCloser.addEventListener("click", closeMicrosite);
+
+  micrositeDialog.addEventListener("click", (event) => {
+    if (event.target === micrositeDialog) closeMicrosite();
+  });
+
+  micrositeDialog.addEventListener("close", () => {
+    document.body.classList.remove("dialog-open");
+  });
+}
+
 const revealItems = document.querySelectorAll(".reveal");
 if ("IntersectionObserver" in window && revealItems.length) {
   const revealObserver = new IntersectionObserver(
