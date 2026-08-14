@@ -1,6 +1,6 @@
 # Bottle Rocket Racing
 
-> Bottle Rocket Racing (BRR) is a motorsports business development and sponsorship firm. As the motorsports arm of Bottle Rocket Growth, BRR partners with elite race teams, including NASCAR teams, to build the commercial infrastructure that converts fan enthusiasm into lasting sponsorship revenue.
+> Bottle Rocket Racing (BRR) is a motorsports business development and sponsorship firm. As the motorsports arm of Bottle Rocket Growth, BRR partners with serious race teams, including NASCAR teams, to build the commercial infrastructure that converts fan enthusiasm into lasting sponsorship revenue.
 
 ## About
 
@@ -39,7 +39,7 @@ Active execution. BRR identifies, contacts, and manages relationships with quali
 Bottle Rocket Racing operates on three core pillars:
 
 1. **Relationship First**: In racing, everything is earned through trust. BRR approaches every potential partnership as a long-term relationship, not a transactional close.
-2. **Data-Driven Pipeline**: Every touchpoint is tracked, measured, and optimized. Full visibility into commercial performance at all times.
+2. **Pipeline Visible**: Every account, touchpoint, response, and next step is tracked so the team always knows what is moving.
 3. **Built for Speed**: The racing calendar waits for no one. BRR processes are designed to identify, engage, and close at the pace the sport demands.
 
 ## Founder
@@ -64,7 +64,7 @@ Mike Cubberly is the founder of Bottle Rocket Racing and Bottle Rocket Growth. B
 
 ## Key Pages
 
-- [Homepage](https://bottlerocketracing.com/): Services, approach, and contact
+- [Homepage](https://bottlerocketracing.com/): Services, results, approach, and contact
 - [About](https://bottlerocketracing.com/about.html): Founder, history, services, and approach
 - [Press & Media Kit](https://bottlerocketracing.com/press.html): Boilerplate, founder bio, quick facts, media contact
 - [Contact](https://bottlerocketracing.com/contact.html): Email, LinkedIn, headquarters, partner agency
