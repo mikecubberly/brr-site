@@ -21,10 +21,9 @@ Bottle Rocket Racing offers two core service lines:
 The sponsor-ready sales system a race team needs before outreach begins.
 
 - 1 custom sponsor microsite
-- 3 partner offers: primary, race, and digital
 - 100 target companies
 - Up to 200 decision-makers
-- SEO and GEO for search and AI discovery
+- SEO and GEO structured across the sponsor microsite and, when needed, the main team site so search engines and AI tools can understand and promote the team
 - CRM setup and sales playbook
 
 ### Sponsorship Pipeline Generation
