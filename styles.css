@@ -659,9 +659,29 @@ p {
   line-height: 1.5;
 }
 
+.tier-tldr {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  width: fit-content;
+  margin: 2px 0 0;
+  padding: 7px 9px;
+  background: rgba(255, 85, 0, 0.1);
+  color: var(--white);
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.tier-tldr b {
+  color: var(--orange);
+  font-family: var(--display);
+  font-size: 9px;
+  letter-spacing: 0.1em;
+}
+
 .tier-price {
   grid-column: 2;
-  grid-row: 1 / span 2;
+  grid-row: 1 / span 3;
   align-self: center;
   min-width: 132px;
   margin: 0;
