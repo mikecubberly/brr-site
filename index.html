@@ -25,7 +25,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,400&amp;family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;1,600&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=services-14">
+  <link rel="stylesheet" href="/styles.css?v=services-15">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -138,15 +138,44 @@
             <p class="eyebrow">Proof on track</p>
             <h2 class="section-title" id="race-proof-title">Sponsorship work should be <span>visible.</span></h2>
           </div>
-          <p>Strategy matters. So does seeing the brand show up clearly when the car, the team, and the audience are all in the same place.</p>
+          <div class="race-proof-head-side">
+            <p>Strategy matters. So does seeing the brand show up clearly when the car, the team, and the audience are all in the same place.</p>
+            <div class="race-gallery-controls" aria-label="Race photo gallery controls">
+              <span class="race-gallery-instruction">Scroll, swipe, or use the arrows</span>
+              <span class="race-gallery-count" data-race-count aria-live="polite">1 / 7</span>
+              <button class="race-gallery-button" type="button" data-race-prev aria-label="Previous race photo" disabled><span aria-hidden="true">&#8592;</span></button>
+              <button class="race-gallery-button" type="button" data-race-next aria-label="Next race photo"><span aria-hidden="true">&#8594;</span></button>
+            </div>
+          </div>
         </div>
-        <div class="race-proof-gallery reveal">
+        <div class="race-proof-gallery reveal" id="race-photo-gallery" data-race-gallery tabindex="0" aria-label="Chicago race photo gallery. Use the left and right arrow keys or the gallery controls to browse.">
           <figure class="race-proof-photo race-proof-photo-main">
             <img src="/race-chicago-speed.jpg" alt="Ryan Ellis Racing number 71 car carrying the Bottle Rocket Growth logo at speed on the Chicago street circuit" width="1920" height="1277" loading="lazy">
+            <figcaption><span>At speed</span><strong>Bottle Rocket Growth in race trim</strong></figcaption>
           </figure>
           <figure class="race-proof-photo race-proof-photo-secondary">
             <img src="/race-chicago-street.jpg" alt="Ryan Ellis Racing number 71 car on a Chicago street circuit with the Bottle Rocket Growth logo visible on the rear quarter panel" width="1500" height="998" loading="lazy">
             <figcaption><span>Chicago street circuit</span><strong>Bottle Rocket Growth on the No. 71</strong></figcaption>
+          </figure>
+          <figure class="race-proof-photo race-proof-photo-skyline">
+            <img src="/race-chicago-skyline.jpg" alt="Ryan Ellis Racing number 71 car carrying Bottle Rocket Growth branding with the Chicago skyline behind it" width="1600" height="1066" loading="lazy">
+            <figcaption><span>Downtown Chicago</span><strong>The No. 71 through the city</strong></figcaption>
+          </figure>
+          <figure class="race-proof-photo race-proof-photo-congress">
+            <img src="/race-chicago-congress.jpg" alt="Ryan Ellis Racing number 71 car with Bottle Rocket Growth branding beneath the Congress Hotel sign in Chicago" width="1800" height="1197" loading="lazy">
+            <figcaption><span>Congress Hotel</span><strong>A sponsor presence built to be seen</strong></figcaption>
+          </figure>
+          <figure class="race-proof-photo race-proof-photo-turn-six">
+            <img src="/race-chicago-turn-six.jpg" alt="Ryan Ellis Racing number 71 car carrying Bottle Rocket Growth branding through turn 6 in Chicago" width="1600" height="1066" loading="lazy">
+            <figcaption><span>Turn 6</span><strong>Brand visibility from every angle</strong></figcaption>
+          </figure>
+          <figure class="race-proof-photo race-proof-photo-turn-ten">
+            <img src="/race-chicago-turn-ten.jpg" alt="Ryan Ellis Racing number 71 car carrying Bottle Rocket Growth branding through turn 10 in Chicago" width="1500" height="1000" loading="lazy">
+            <figcaption><span>Turn 10</span><strong>The No. 71 in the Chicago streets</strong></figcaption>
+          </figure>
+          <figure class="race-proof-photo race-proof-photo-portrait">
+            <img src="/race-chicago-team.jpg" alt="Three people beside the number 71 race car with Bottle Rocket Growth branding" width="564" height="848" loading="lazy">
+            <figcaption><span>Trackside</span><strong>The people behind the partnership</strong></figcaption>
           </figure>
         </div>
       </div>
@@ -340,6 +369,6 @@
       </div>
     </div>
   </footer>
-  <script src="/site.js?v=services-7" defer></script>
+  <script src="/site.js?v=services-8" defer></script>
 </body>
 </html>

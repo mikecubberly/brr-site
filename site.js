@@ -50,3 +50,51 @@ if ("IntersectionObserver" in window && revealItems.length) {
 } else {
   revealItems.forEach((item) => item.classList.add("is-visible"));
 }
+
+const raceGallery = document.querySelector("[data-race-gallery]");
+const racePrev = document.querySelector("[data-race-prev]");
+const raceNext = document.querySelector("[data-race-next]");
+const raceCount = document.querySelector("[data-race-count]");
+
+if (raceGallery && racePrev && raceNext) {
+  const racePhotos = Array.from(raceGallery.querySelectorAll(".race-proof-photo"));
+  const racePhotoLeft = (photo) => (
+    photo.getBoundingClientRect().left
+    - raceGallery.getBoundingClientRect().left
+    + raceGallery.scrollLeft
+  );
+
+  const currentRacePhoto = () => {
+    const left = raceGallery.scrollLeft;
+    return racePhotos.reduce((closest, photo, index) => {
+      const distance = Math.abs(racePhotoLeft(photo) - left);
+      return distance < closest.distance ? { index, distance } : closest;
+    }, { index: 0, distance: Number.POSITIVE_INFINITY }).index;
+  };
+
+  const updateRaceGallery = () => {
+    const index = currentRacePhoto();
+    const atStart = raceGallery.scrollLeft <= 4;
+    const atEnd = raceGallery.scrollLeft >= raceGallery.scrollWidth - raceGallery.clientWidth - 4;
+    racePrev.disabled = atStart;
+    raceNext.disabled = atEnd;
+    if (raceCount) raceCount.textContent = `${index + 1} / ${racePhotos.length}`;
+  };
+
+  const moveRaceGallery = (direction) => {
+    const current = currentRacePhoto();
+    const target = Math.max(0, Math.min(racePhotos.length - 1, current + direction));
+    raceGallery.scrollTo({ left: racePhotoLeft(racePhotos[target]), behavior: "smooth" });
+  };
+
+  racePrev.addEventListener("click", () => moveRaceGallery(-1));
+  raceNext.addEventListener("click", () => moveRaceGallery(1));
+  raceGallery.addEventListener("scroll", updateRaceGallery, { passive: true });
+  raceGallery.addEventListener("keydown", (event) => {
+    if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+    event.preventDefault();
+    moveRaceGallery(event.key === "ArrowRight" ? 1 : -1);
+  });
+  window.addEventListener("resize", updateRaceGallery);
+  updateRaceGallery();
+}
