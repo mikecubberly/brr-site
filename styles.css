@@ -270,8 +270,8 @@ select {
 .hero {
   position: relative;
   display: flex;
-  min-height: min(840px, 92svh);
-  padding: 132px 0 28px;
+  min-height: min(760px, 86svh);
+  padding: 118px 0 22px;
   overflow: hidden;
   background: var(--black);
 }
@@ -279,7 +279,7 @@ select {
 .hero-media {
   position: absolute;
   inset: 0;
-  background-image: url("/race-car-88.png");
+  background-image: url("/race-car-88-crisp.png");
   background-repeat: no-repeat;
   background-position: 68% center;
   background-size: cover;
@@ -326,7 +326,7 @@ select {
 
 .hero-copy {
   max-width: 670px;
-  padding-bottom: clamp(42px, 6vh, 72px);
+  padding-bottom: clamp(30px, 4vh, 46px);
 }
 
 .eyebrow {
@@ -437,7 +437,7 @@ p {
 }
 
 .race-proof-section {
-  padding: 92px 0;
+  padding: 64px 0;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   background:
@@ -449,8 +449,8 @@ p {
   display: grid;
   grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.5fr);
   align-items: end;
-  gap: 56px;
-  margin-bottom: 42px;
+  gap: 48px;
+  margin-bottom: 26px;
 }
 
 .race-proof-head-side > p {
@@ -556,7 +556,7 @@ p {
 }
 
 .race-proof-photo {
-  flex: 0 0 min(74vw, 920px);
+  flex: 0 0 min(64vw, 760px);
   aspect-ratio: 16 / 9;
   scroll-snap-align: start;
   scroll-snap-stop: always;
@@ -651,7 +651,7 @@ p {
 
 .section {
   position: relative;
-  padding: 92px 0;
+  padding: 76px 0;
   overflow: hidden;
 }
 
@@ -670,7 +670,7 @@ p {
   grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.55fr);
   align-items: end;
   gap: 56px;
-  margin-bottom: 46px;
+  margin-bottom: 36px;
 }
 
 .section-title {
@@ -703,7 +703,7 @@ p {
 .offer-split {
   display: grid;
   grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
-  gap: 28px;
+  gap: 22px;
   align-items: start;
 }
 
@@ -726,7 +726,7 @@ p {
 
 .offer-panel-head {
   min-height: 0;
-  padding: 26px 30px 24px;
+  padding: 22px 26px 20px;
   border-bottom: 1px solid var(--line);
 }
 
@@ -904,7 +904,7 @@ p {
 }
 
 .sender-profile-preview {
-  padding: 14px;
+  padding: 12px;
   border-bottom: 1px solid var(--line);
   background: #080a0d;
 }
@@ -950,7 +950,7 @@ p {
 
 .sender-profile-banner {
   position: relative;
-  height: 148px;
+  height: 118px;
   overflow: hidden;
   background-image:
     linear-gradient(180deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.2)),
@@ -963,15 +963,15 @@ p {
 .sender-profile-body {
   position: relative;
   display: grid;
-  grid-template-columns: 84px minmax(0, 1fr);
-  gap: 14px;
-  padding: 0 18px 15px;
+  grid-template-columns: 70px minmax(0, 1fr);
+  gap: 12px;
+  padding: 0 15px 12px;
 }
 
 .sender-avatar {
-  width: 80px;
-  height: 80px;
-  margin-top: -30px;
+  width: 66px;
+  height: 66px;
+  margin-top: -24px;
   border: 4px solid #f4f6f8;
   border-radius: 50%;
   background-image: url("https://bottlerocketgrowth.com/assets/fictional-sender-headshots.jpg");
@@ -982,7 +982,7 @@ p {
 }
 
 .sender-identity {
-  padding-top: 14px;
+  padding-top: 11px;
 }
 
 .sender-identity strong,
@@ -1043,8 +1043,8 @@ p {
 
 .sender-headline {
   grid-column: 1 / -1;
-  margin-top: 8px;
-  padding: 12px 13px;
+  margin-top: 5px;
+  padding: 9px 11px;
   border: 1px solid #dde3e9;
   border-radius: 6px;
   background: #fff;
@@ -1062,8 +1062,8 @@ p {
 
 .sender-profile-bottom > span,
 .sender-experience {
-  min-height: 88px;
-  padding: 10px;
+  min-height: 72px;
+  padding: 8px;
   border: 1px solid #dde3e9;
   border-radius: 6px;
   background: #fff;
@@ -1468,24 +1468,24 @@ p {
 
 .foundation-content .microsite-preview {
   display: grid;
-  grid-template-rows: 35px 270px;
+  grid-template-rows: 35px 230px;
   border-right: 0;
   border-bottom: 1px solid var(--line);
 }
 
 .foundation-content .preview-car-wrap {
-  height: 270px;
+  height: 230px;
   min-height: 0;
 }
 
 .foundation-list {
-  padding: 4px 22px 8px;
+  padding: 2px 20px 6px;
 }
 
 .foundation-row {
   grid-template-columns: 92px minmax(0, 1fr);
   gap: 18px;
-  padding: 17px 2px;
+  padding: 14px 2px;
 }
 
 .foundation-row > strong {
@@ -1504,7 +1504,7 @@ p {
 
 .pipeline-overview {
   display: block;
-  padding: 14px 16px 0;
+  padding: 12px 14px 0;
   border-bottom: 0;
 }
 
@@ -1518,8 +1518,8 @@ p {
   align-items: end;
   justify-content: space-between;
   gap: 22px;
-  margin: 16px 16px 0;
-  padding: 16px 2px 14px;
+  margin: 12px 14px 0;
+  padding: 12px 2px 11px;
   border-top: 1px solid var(--line);
 }
 
@@ -1555,17 +1555,17 @@ p {
 .tier-list {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 9px;
-  padding: 0 16px 16px;
+  gap: 7px;
+  padding: 0 14px 14px;
 }
 
 .tier-row {
   position: relative;
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
-  gap: 9px 20px;
+  gap: 7px 18px;
   min-height: 0;
-  padding: 18px;
+  padding: 14px;
   border: 1px solid var(--line);
   background: #07090b;
 }
@@ -1622,13 +1622,13 @@ p {
   width: fit-content;
   min-height: 0;
   margin: 1px 0 0;
-  padding: 7px 9px;
+  padding: 6px 8px;
 }
 
 .tier-terms {
   grid-column: 1 / -1;
   margin: 3px 0 0;
-  padding-top: 11px;
+  padding-top: 8px;
   border-top: 1px solid var(--line);
 }
 
@@ -1834,14 +1834,14 @@ body.dialog-open {
 .pipeline-grid {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
-  min-height: 510px;
+  min-height: 480px;
 }
 
 .pipeline-copy {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 68px 64px 68px 0;
+  padding: 56px 58px 56px 0;
 }
 
 .pipeline-visual {
@@ -1850,7 +1850,7 @@ body.dialog-open {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 510px;
+  min-height: 480px;
   border-left: 1px solid var(--line);
   overflow: hidden;
   background:
@@ -2040,7 +2040,7 @@ body.dialog-open {
 
 .founder-band {
   position: relative;
-  padding: 64px 0;
+  padding: 50px 0;
   border-top: 1px solid var(--line);
   background: var(--orange);
   color: var(--black);
@@ -2073,14 +2073,14 @@ body.dialog-open {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: 180px minmax(210px, 0.5fr) minmax(0, 1.25fr);
+  grid-template-columns: 160px minmax(210px, 0.5fr) minmax(0, 1.25fr);
   align-items: center;
   gap: clamp(34px, 4vw, 72px);
 }
 
 .founder-portrait-frame {
   position: relative;
-  width: 180px;
+  width: 160px;
   aspect-ratio: 1;
   padding: 7px;
   border: 3px solid var(--black);
@@ -2172,7 +2172,7 @@ body.dialog-open {
 
 .cta-section {
   position: relative;
-  padding: 96px 0;
+  padding: 78px 0;
   text-align: center;
   background:
     radial-gradient(circle at 50% 55%, rgba(255, 90, 10, 0.16), transparent 36%),
@@ -2207,7 +2207,7 @@ body.dialog-open {
   overflow: hidden;
   background:
     linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.88) 48%, rgba(0, 0, 0, 0.36) 100%),
-    url("/race-car-88.png") center 48% / cover no-repeat;
+    url("/race-car-88-crisp.png") center 48% / cover no-repeat;
 }
 
 .page-hero::after {
@@ -2675,7 +2675,7 @@ body.dialog-open {
 
   .hero {
     min-height: auto;
-    padding: 136px 0 24px;
+    padding: 112px 0 22px;
   }
 
   .hero-media {
@@ -2689,7 +2689,7 @@ body.dialog-open {
   }
 
   .hero-copy {
-    padding: 38vh 0 54px;
+    padding: 30vh 0 40px;
   }
 
   .section-head,
@@ -2747,7 +2747,7 @@ body.dialog-open {
   }
 
   .foundation-content .preview-car-wrap {
-    min-height: 300px;
+    min-height: 210px;
   }
 
   .pipeline-choice-intro {
@@ -2759,11 +2759,11 @@ body.dialog-open {
   }
 
   .pipeline-copy {
-    padding: 70px 0 48px;
+    padding: 56px 0 40px;
   }
 
   .pipeline-visual {
-    min-height: 400px;
+    min-height: 340px;
     border-top: 1px solid var(--line);
     border-left: 0;
   }
@@ -2773,7 +2773,7 @@ body.dialog-open {
   }
 
   .founder-portrait-frame {
-    width: 180px;
+    width: 154px;
   }
 
   .content-grid {
@@ -2828,14 +2828,35 @@ body.dialog-open {
 
   .hero-media {
     background-position: 58% top;
-    background-size: auto 66%;
+    background-size: auto 60%;
   }
 
   .hero-copy {
-    padding-top: 42vh;
+    padding-top: 24vh;
   }
 
-  .proof-strip,
+  .hero-actions {
+    flex-wrap: nowrap;
+    gap: 8px;
+  }
+
+  .hero-actions .button {
+    flex: 1 1 0;
+    min-width: 0;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+  }
+
+  .hero-actions .button-arrow::after {
+    margin-left: 8px;
+  }
+
+  .proof-strip {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .approach-grid,
   .facts-grid,
   .asset-grid {
@@ -2844,20 +2865,31 @@ body.dialog-open {
 
   .proof-item {
     min-height: auto;
-    border-right: 0;
-    border-bottom: 1px solid var(--line);
-  }
-
-  .proof-item:last-child {
+    padding: 12px 8px;
+    border-right: 1px solid var(--line);
     border-bottom: 0;
   }
 
+  .proof-value {
+    font-size: 26px;
+  }
+
+  .proof-label {
+    margin-top: 6px;
+    font-size: 7.5px;
+    letter-spacing: 0.1em;
+  }
+
+  .proof-item:last-child {
+    border-right: 0;
+  }
+
   .section {
-    padding: 68px 0;
+    padding: 56px 0;
   }
 
   .race-proof-section {
-    padding: 68px 0;
+    padding: 50px 0;
   }
 
   .race-proof-head {
@@ -2870,7 +2902,7 @@ body.dialog-open {
 
   .race-proof-photo {
     flex-basis: calc(100vw - 70px);
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 16 / 10;
   }
 
   .race-proof-photo-portrait {
@@ -2933,7 +2965,7 @@ body.dialog-open {
   }
 
   .sender-profile-banner {
-    height: 150px;
+    height: 112px;
     background-position: 56% center;
   }
 
@@ -2948,7 +2980,7 @@ body.dialog-open {
   }
 
   .sender-profile-bottom {
-    grid-template-columns: 1fr;
+    display: none;
   }
 
   .profile-callout {
@@ -2962,7 +2994,7 @@ body.dialog-open {
   .foundation-row {
     grid-template-columns: 88px minmax(0, 1fr);
     gap: 16px;
-    padding: 18px 4px;
+    padding: 14px 4px;
   }
 
   .foundation-row > strong {
@@ -2971,7 +3003,7 @@ body.dialog-open {
 
   .tier-row {
     grid-template-columns: 1fr;
-    padding: 18px;
+    padding: 14px;
   }
 
   .tier-price {
@@ -3044,7 +3076,7 @@ body.dialog-open {
   }
 
   .pipeline-visual {
-    min-height: 360px;
+    min-height: 260px;
   }
 
   .pipeline-visual::before {
@@ -3065,7 +3097,7 @@ body.dialog-open {
   }
 
   .founder-band {
-    padding: 56px 0;
+    padding: 36px 0;
   }
 
   .founder-watermark {
@@ -3080,18 +3112,30 @@ body.dialog-open {
   }
 
   .founder-portrait-frame {
-    width: 160px;
+    width: 124px;
     box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.16);
   }
 
   .page-hero {
-    min-height: 560px;
-    padding: 144px 0 70px;
+    min-height: 470px;
+    padding: 116px 0 50px;
     background-position: 62% center;
   }
 
   .page-hero p {
     font-size: 18px;
+  }
+
+  .pipeline-copy {
+    padding: 44px 0 32px;
+  }
+
+  .founder-grid {
+    gap: 24px;
+  }
+
+  .cta-section {
+    padding: 64px 0;
   }
 
   .footer-top,
