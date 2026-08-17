@@ -26,7 +26,7 @@ Price: $2,500 one-time build.
 - 100 target companies
 - Up to 300 decision-makers
 - SEO and GEO structured across the sponsor microsite and, when needed, the main team site so search engines and AI tools can understand and promote the team
-- CRM setup and sales playbook
+- Optional simple CRM setup for teams without a working system
 
 ### Sponsorship Pipeline Generation
 
