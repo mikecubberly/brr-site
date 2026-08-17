@@ -2251,7 +2251,7 @@ body.dialog-open {
 }
 
 .site-footer {
-  padding: 34px 0 24px;
+  padding: 14px 0 0;
   border-top: 1px solid var(--line);
   background: #000;
 }
@@ -2260,14 +2260,16 @@ body.dialog-open {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 36px;
-  padding-bottom: 26px;
+  gap: 28px;
+  min-height: 46px;
+  padding-bottom: 14px;
 }
 
 .footer-logo {
   display: block;
-  width: clamp(180px, 24vw, 250px);
-  height: 52px;
+  flex: 0 0 auto;
+  width: clamp(180px, 19vw, 225px);
+  height: 40px;
   margin-left: -8px;
   overflow: hidden;
 }
@@ -2276,7 +2278,7 @@ body.dialog-open {
   display: block;
   width: 100%;
   height: auto;
-  transform: translateY(-19px);
+  transform: translateY(-17px);
 }
 
 .footer-links {
@@ -2284,13 +2286,13 @@ body.dialog-open {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: flex-end;
-  gap: clamp(20px, 2.5vw, 44px);
+  gap: clamp(16px, 2vw, 34px);
 }
 
 .footer-links a {
   color: var(--muted-bright);
   font-family: var(--display);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.09em;
   text-transform: uppercase;
@@ -2302,12 +2304,14 @@ body.dialog-open {
 
 .footer-bottom {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding-top: 20px;
+  min-height: 36px;
+  padding: 9px 0 10px;
   border-top: 1px solid var(--line);
   color: var(--muted);
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .footer-bottom a {
