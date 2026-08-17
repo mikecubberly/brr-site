@@ -1825,12 +1825,22 @@ body.dialog-open {
 
 .founder-watermark {
   position: absolute;
-  right: -36px;
-  top: -36px;
+  right: -12px;
+  top: 24px;
   width: 320px;
-  height: auto;
+  height: 170px;
   opacity: 0.07;
-  filter: brightness(0);
+  background: var(--black);
+  -webkit-mask-image: url("/brr-wordmark.png");
+  mask-image: url("/brr-wordmark.png");
+  -webkit-mask-mode: luminance;
+  mask-mode: luminance;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 1614px auto;
+  mask-size: 1614px auto;
+  -webkit-mask-position: 0 -165px;
+  mask-position: 0 -165px;
   pointer-events: none;
   user-select: none;
 }
@@ -2761,9 +2771,14 @@ body.dialog-open {
   }
 
   .founder-watermark {
-    right: -22px;
-    top: -18px;
+    right: -8px;
+    top: 18px;
     width: 190px;
+    height: 110px;
+    -webkit-mask-size: 934px auto;
+    mask-size: 934px auto;
+    -webkit-mask-position: 0 -88px;
+    mask-position: 0 -88px;
   }
 
   .founder-portrait-frame {
