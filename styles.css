@@ -873,19 +873,33 @@ p {
 
 .sender-experience-entry {
   display: grid;
-  grid-template-columns: 28px minmax(0, 1fr);
-  gap: 7px;
+  grid-template-columns: 32px minmax(0, 1fr);
+  gap: 8px;
   align-items: start;
 }
 
-.sender-experience-entry > img {
-  display: block;
-  width: 28px;
-  height: 28px;
-  padding: 1px;
+.sender-company-logo {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
   border: 1px solid #d9dfe5;
-  border-radius: 3px;
+  border-radius: 4px;
   background: #101114;
+}
+
+.sender-company-logo > img {
+  display: block;
+  width: 28px !important;
+  min-width: 28px;
+  max-width: 28px !important;
+  height: 28px !important;
+  min-height: 28px;
+  max-height: 28px;
+  padding: 0;
+  border: 0;
+  background: transparent;
   object-fit: contain;
 }
 
